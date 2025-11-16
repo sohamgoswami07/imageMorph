@@ -284,7 +284,7 @@ function App() {
             key={index}
             href={brand.link}
             onClick={(e) => handleBrandClick(e, brand)}
-            className="brand-name block text-lg md:text-2xl font-semibold leading-tight my-4 md:my-6 cursor-pointer"
+            className="brand-name block font-semibold leading-tight my-4 md:my-6 cursor-pointer"
           >
             {brand.title}
           </a>
