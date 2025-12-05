@@ -1,17 +1,79 @@
-# React + Vite
+# ImageMorph on Text Hover - Vanilla Version
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a pure vanilla HTML, CSS, and JavaScript implementation of the ImageMorph on Text Hover project. No build tools or bundlers required!
 
-Currently, two official plugins are available:
+## 📁 Project Structure
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+```
+vanilla/
+├── index.html          # Main HTML file
+├── style.css           # All styles (converted from TailwindCSS)
+├── script.js           # Vanilla JavaScript (converted from React)
+├── photos/             # Brand images folder
+│   ├── adidas.webp
+│   ├── asics.webp
+│   ├── calvin-klein.webp
+│   ├── decathlon.webp
+│   ├── fila.webp
+│   ├── new-balance.webp
+│   ├── nike.webp
+│   ├── puma.webp
+│   └── salomon.webp
+└── README.md           # This file
+```
 
-## React Compiler
+## 🚀 How to Run
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+1. Simply open `index.html` in any modern web browser
+2. No installation or build process needed!
 
-## Expanding the ESLint configuration
+## 📚 Libraries Used (via CDN)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-# imageMorph
+- **GSAP 3.12.5** - For smooth animations
+- **CustomEase** - For custom easing curves
+- **Google Fonts** - DM Sans and IBM Plex Mono
+
+All libraries are loaded directly from CDN, so no npm installation required.
+
+## ✨ Features
+
+- Smooth hover animations on brand names
+- Dynamic image morphing effect
+- Scroll indicator dots
+- Mix-blend-mode for text contrast
+- Fully responsive design
+- Custom GSAP easing ("hop" animation)
+
+## 🎨 How It Works
+
+1. **Hover Effect**: When you hover over a brand name, an image smoothly animates in using clip-path and scale animations
+2. **Scroll Detection**: As you scroll through the brand list, the nearest brand automatically activates
+3. **Indicator Dots**: Right-side dots show which brand is currently active
+4. **Mix Blend Mode**: Brand names use difference blend mode to stay visible over images
+
+## 🔧 Customization
+
+To add more brands, edit the `brands` array in `script.js`:
+
+```javascript
+const brands = [
+  { img: "photos/your-image.webp", title: "Your Brand" },
+];
+```
+
+Then add the corresponding image to the `photos/` folder.
+
+## 📱 Browser Compatibility
+
+Works in all modern browsers that support:
+
+- CSS Grid & Flexbox
+- CSS clip-path
+- GSAP 3.x
+- ES6 JavaScript
+
+## 💡 Notes
+
+- Images should be in WebP format for best performance
+- The mix-blend-mode creates the text contrast effect
+- All animations are GPU-accelerated for smooth performance

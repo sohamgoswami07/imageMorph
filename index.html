@@ -1,12 +1,26 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>imagemorph-on-text-hover</title>
+    <title>ImageMorph on Text Hover</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- GSAP from CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/CustomEase.min.js"></script>
   </head>
   <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
+    <section class="brand-section">
+      <!-- Left: brands list -->
+      <div class="brand-list" id="brandList"></div>
+
+      <!-- Center: preview area -->
+      <div class="brand-preview" id="brandPreview"></div>
+
+      <!-- Right-side scroll indicator -->
+      <div class="scroll-indicator" id="scrollIndicator"></div>
+    </section>
+
+    <script src="script.js"></script>
   </body>
 </html>
