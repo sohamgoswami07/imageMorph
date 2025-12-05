@@ -2,6 +2,14 @@
 
 This is a pure vanilla HTML, CSS, and JavaScript implementation of the ImageMorph on Text Hover project. No build tools or bundlers required!
 
+---
+
+## 🎬 Preview
+
+https://github.com/user-attachments/assets/ac700186-378a-4e3c-81f6-cd01192340c8
+
+---
+
 ## 📁 Project Structure
 
 ```
