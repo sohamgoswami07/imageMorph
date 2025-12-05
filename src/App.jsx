@@ -275,7 +275,7 @@ function App() {
     <section className="snap-start relative h-screen w-full p-4 md:p-16 bg-[#ededed] flex items-stretch">
       {/* Left: brands list */}
       <div
-        className="relative z-10 overflow-y-auto no-scrollbar mix-blend-difference text-[#ededed]"
+        className="absolute top-1/2 -translate-y-1/2 z-10 overflow-y-auto no-scrollbar mix-blend-difference text-[#ededed]"
         onWheel={handleWheel}
         ref={listRef}
       >
